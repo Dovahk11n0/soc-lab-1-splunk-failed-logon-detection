@@ -96,3 +96,12 @@ Monitoring this event is a basic but important task for SOC analysts.
 -This lab demonstrates how a SIEM such as Splunk can be used to detect failed authentication attempts using Windows Event Logs.
 -By analyzing Event ID 4625, analysts can identify suspicious login behavior that may indicate brute force attacks or unauthorized access attempts.
 -This foundational detection is a critical task in real-world SOC environments.
+
+## Key Skills Demonstrated
+
+- SIEM configuration (Splunk)
+- Log ingestion and monitoring
+- Windows Event Log analysis
+- Basic threat detection
+- Troubleshooting and lab setup
+- Virtual lab environment setup (VirtualBox)
