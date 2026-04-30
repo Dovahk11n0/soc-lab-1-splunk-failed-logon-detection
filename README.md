@@ -71,15 +71,15 @@ Meaning: Failed logon attempt
 -Search query used:
 -index=* 4625
 
-## Result:
-
--Successfully identified approximately 20 failed logon attempts
-
 ## Analysis:
 
 -Multiple Event ID 4625 entries were observed in Splunk.
 -Each event represented a failed login attempt. The activity was intentionally generated through repeated incorrect password entries.
 -This confirmed that Windows Security logs were successfully ingested into Splunk and could be analyzed for authentication-related activity.
+
+## Result:
+
+-Successfully identified approximately 20 failed logon attempts
 
 ## Security Relevance
 
