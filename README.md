@@ -30,8 +30,7 @@ The goal of this lab was to build a basic SOC-style detection workflow by ingest
 - Configured VM networking for lab use
 - Installed Splunk Enterprise on the Windows 10 VM
 - Accessed Splunk locally through:
-
-``text
+---text
 https://localhost:8000
 
 ## Data Ingestion
