@@ -49,39 +49,39 @@ The following Windows logs were collected:
 -System
 -Application
 
-##Test Activity
+## Test Activity
 
 -Failed logon attempts were manually generated on the Windows 10 VM.
 -The purpose was to create failed authentication events that could be detected in Splunk.
 
-Expected Windows Event:
+-Expected Windows Event:
 
 Event ID: 4625
 Meaning: Failed logon attempt
 
-##Attack Simulation
+## Attack Simulation
 
 -The Windows system was locked, and incorrect passwords were entered multiple times.
 -This generated Windows Security Event ID 4625, which represents failed logon activity.
 
-##Detection
+## Detection
 
 -Splunk was used to search for failed logon events.
 
 -Search query used:
 -index=* 4625
 
-##Result:
+## Result:
 
 -Successfully identified approximately 20 failed logon attempts
 
-##Analysis:
+## Analysis:
 
 -Multiple Event ID 4625 entries were observed in Splunk.
 -Each event represented a failed login attempt. The activity was intentionally generated through repeated incorrect password entries.
 -This confirmed that Windows Security logs were successfully ingested into Splunk and could be analyzed for authentication-related activity.
 
-##Security Relevance
+## Security Relevance
 
 -Windows Event ID 4625 is important for detecting:
 
@@ -91,7 +91,7 @@ Meaning: Failed logon attempt
 -Suspicious login behavior
 Monitoring this event is a basic but important task for SOC analysts.
 
-##Conclusion
+## Conclusion
 
 -This lab demonstrates how a SIEM such as Splunk can be used to detect failed authentication attempts using Windows Event Logs.
 -By analyzing Event ID 4625, analysts can identify suspicious login behavior that may indicate brute force attacks or unauthorized access attempts.
